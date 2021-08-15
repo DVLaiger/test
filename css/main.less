@@ -13,84 +13,31 @@
 /*
 Header style
  */
-
-.search_box {
-  display: inline-block;
-  float: left;
-  margin-left: 30px;
-  cursor: pointer;
-  
-  #searchform fieldset{
-    &:before {
-      content: "\f002";
-      font: normal normal normal 14px/1 FontAwesome;
-      display: inline-block;
-      margin-right: 5px;
-    }
-  }
-  
-  #searchsubmit {
-    display: none;
-  }
-  
-  input.searchinput {
-    border: none;
-    color: grey;
-    font-size: 12px;
-    font-style: italic;
-    
-    
-    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-      color: grey;
-      font-size: 12px;
-      font-style: italic;
-    }
-    &::-moz-placeholder { /* Firefox 19+ */
-      color:  grey;
-      font-size: 12px;
-      font-style: italic;
-    }
-    &:-ms-input-placeholder { /* IE 10+ */
-      color: grey;
-      font-size: 12px;
-      font-style: italic;
-    }
-    &:-moz-placeholder { /* Firefox 18- */
-      color:  grey;
-      font-size: 12px;
-      font-style: italic;
-    }
-  }
-}
-
-
 .searchbar{
   margin-bottom: auto;
   margin-top: auto;
   height: 60px;
-  background-color: #cbc8ff;
+  background-color: #353b48;
   border-radius: 30px;
   padding: 10px;
- 
 }
 
 .search_input{
-  border: #cbc8ff;
-  background: transparent;
+  color: white;
+  border: 0;
+  outline: 0;
+  background: none;
   width: 0;
-  caret-color: blue;
+  caret-color:transparent;
   line-height: 40px;
   transition: width 0.4s linear;
 }
 
-.searchbar:hover {
-  
-  .search_input{
-    padding: 0 25px;
-    width: 450px;
-    caret-color:red;
-    transition: width 0.4s linear;
-  }
+.searchbar:hover > .search_input{
+  padding: 0 10px;
+  width: 450px;
+  caret-color:red;
+  transition: width 0.4s linear;
 }
 
 .searchbar:hover > .search_icon{
@@ -108,7 +55,27 @@ Header style
   border-radius: 50%;
   color:white;
   text-decoration:none;
+}
 
+&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: grey;
+  font-size: 12px;
+  font-style: italic;
+}
+&::-moz-placeholder { /* Firefox 19+ */
+  color:  grey;
+  font-size: 12px;
+  font-style: italic;
+}
+&:-ms-input-placeholder { /* IE 10+ */
+  color: grey;
+  font-size: 12px;
+  font-style: italic;
+}
+&:-moz-placeholder { /* Firefox 18- */
+  color:  grey;
+  font-size: 12px;
+  font-style: italic;
 }
 /*
 Page-home styles
@@ -118,7 +85,7 @@ Page-home styles
 }
 
 .c1, .c2, .c3, .c4, .c5 {
-  height: 100vh;
+  height: 50vh;
 }
 
 .c1 {
@@ -140,9 +107,6 @@ Page-home styles
 .c5 {
   background-color: #0b2e13;
 }
- 
-
-
 
   
 
